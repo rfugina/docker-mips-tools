@@ -1,7 +1,7 @@
 
-MAINTAINER Rob Fugina <robf@fugina.com>
-
 FROM ubuntu:wily
+
+MAINTAINER Rob Fugina <robf@fugina.com>
 
 RUN apt-get update && apt-get -y dist-upgrade \
   && apt-get install -y --force-yes --no-install-recommends software-properties-common \
