@@ -1,4 +1,6 @@
 
+MAINTAINER Rob Fugina <robf@fugina.com>
+
 FROM ubuntu:wily
 
 RUN apt-get update && apt-get -y dist-upgrade \
