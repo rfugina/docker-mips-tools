@@ -1,0 +1,8 @@
+
+This image pulls together a MIPS cross-development environment on top of Ubuntu Wily
+with tools from this PPA:
+
+https://launchpad.net/~angelsl/+archive/ubuntu/mips-cross
+
+Unfortunately for now, Wily is the only Ubuntu release that the PPA supports.
+
