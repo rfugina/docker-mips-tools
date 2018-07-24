@@ -1,14 +1,10 @@
 
-FROM ubuntu:wily
+FROM ubuntu:xenial
 
 MAINTAINER Rob Fugina <robf@fugina.com>
 
-RUN sed -i 's/archive/old-releases/' /etc/apt/sources.list
-
-RUN apt-get update && apt-get -y dist-upgrade \
+RUN apt-get update && apt-get install -y apt-utils && apt-get -y dist-upgrade \
   && apt-get install -y --force-yes --no-install-recommends software-properties-common \
-  && apt-add-repository ppa:angelsl/mips-cross \
-  && apt-get update \
   && apt-get install -y --force-yes --no-install-recommends \
     gcc-5-mips-linux-gnu \
     libc6-dev-mips-cross \
