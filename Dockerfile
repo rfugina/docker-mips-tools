@@ -1,5 +1,5 @@
 
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 
 MAINTAINER Rob Fugina <robf@fugina.com>
 
