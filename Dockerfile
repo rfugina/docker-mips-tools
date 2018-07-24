@@ -3,6 +3,8 @@ FROM ubuntu:wily
 
 MAINTAINER Rob Fugina <robf@fugina.com>
 
+RUN sed -i 's/archive/old-releases/' /etc/apt/sources.list
+
 RUN apt-get update && apt-get -y dist-upgrade \
   && apt-get install -y --force-yes --no-install-recommends software-properties-common \
   && apt-add-repository ppa:angelsl/mips-cross \
